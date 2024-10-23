@@ -26,7 +26,7 @@
                 <!-- Logo de Etapa Productiva y texto "Centro de Comercio y Servicios" en el lado derecho -->
                 <div class="text-left">
                     <!-- Logo de Etapa Seguimiento -->
-                    <a href="{{ route('apprentice') }}" class="flex items-center">
+                    <a href="{{ route('icon') }}" class="flex items-center">
                         <img src="{{ asset('img/logo.png') }}" alt="Etapa Seguimiento Logo" class="w-10 h-auto mr-1.5">
                         <div class="flex flex-col text-left">
                             <h2 class="text-[12px] m-0 text-[#009e00]">Etapa</h2>
@@ -89,8 +89,9 @@
                     </div>
                     <ul>
                         <a href="{{ route('username')}}" class="block text-center text-green-600 font-bold mt-4 bg-white border hover:text-white hover:bg-green-600 border-green-600 rounded-lg py-1">ver perfil</a>
-                        <li class="mt-2"><a href="#" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
-                        <li class="mt-2"><a href="{{ route('apprentice') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('configuracion')}}" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
+                        <li class="mt-2"><a href="{{ route('icon') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('cronograma') }}" class="block text-black hover:bg-white p-2 rounded-lg">Cronograma</a></li>
 
                     </ul>
                     <form id="logoutForm" action="{{ route('logout') }}" method="POST" class="mt-4">
@@ -116,8 +117,8 @@
     </div>
 
 
-    <div class="w-auto flex justify-start m-2 pl-56 items-center">
-        <a href="{{ route('report')}}" type="submit" class="bg-red-600 hover:bg-red-800 text-white p-1 rounded">Redactar</a>
+    <div class="w-24 flex justify-start m-2 pl-56 items-center">
+        <a href="{{ route('report')}}" type="submit" class="bg-gray-300 hover:bg-gray-400 text-black p-1 rounded">Redactar</a>
     </div>
     <div class="flex justify-center">
         <main class="bg-white m-4 p-4 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.8)] border-[#2F3E4C] w-2/3 items-center">
@@ -137,7 +138,7 @@
                             <a href="{{ route('email') }}">
                                 <button class="bg-[#009e00] text-white p-2 rounded ml-2">Ver</button>
                             </a>
-                            <button class="bg-red-500 text-white p-2 rounded ml-2">Eliminar</button>
+                            <button class="bg-gray-300 text-black p-2 rounded ml-2">Eliminar</button>
                         </div>
                     </div>
                 </li>
@@ -152,7 +153,7 @@
                             <a href="{{ route('email') }}">
                                 <button class="bg-[#009e00] text-white p-2 rounded ml-2">Ver</button>
                             </a>
-                            <button class="bg-red-500 text-white p-2 rounded ml-2">Eliminar</button>
+                            <button class="bg-gray-300 text-black p-2 rounded ml-2">Eliminar</button>
                         </div>
                     </div>
                 </li>
@@ -167,7 +168,7 @@
                             <a href="{{ route('email') }}">
                                 <button class="bg-[#009e00] text-white p-2 rounded ml-2">Ver</button>
                             </a>
-                            <button class="bg-red-500 text-white p-2 rounded ml-2">Eliminar</button>
+                            <button class="bg-gray-300 text-black p-2 rounded ml-2">Eliminar</button>
                         </div>
                     </div>
                 </li>
@@ -182,7 +183,7 @@
                             <a href="{{ route('email') }}">
                                 <button class="bg-[#009e00] text-white p-2 rounded ml-2">Ver</button>
                             </a>
-                            <button class="bg-red-500 text-white p-2 rounded ml-2">Eliminar</button>
+                            <button class="bg-gray-300 text-black p-2 rounded ml-2">Eliminar</button>
                         </div>
                     </div>
                 </li>
@@ -197,7 +198,7 @@
                             <a href="{{ route('email') }}">
                                 <button class="bg-[#009e00] text-white p-2 rounded ml-2">Ver</button>
                             </a>
-                            <button class="bg-red-500 text-white p-2 rounded ml-2">Eliminar</button>
+                            <button class="bg-gray-300 text-black p-2 rounded ml-2">Eliminar</button>
                         </div>
                     </div>
                 </li>
@@ -207,9 +208,9 @@
     <script>
         function setActive(button) {
             // Remueve la clase 'active-button' de todos los botones
-            document.querySelectorAll('.active-button').forEach(btn => btn.classList.remove('bg-green-600', 'active-button'));
+            document.querySelectorAll('.active-button').forEach(btn => btn.classList.remove('bg-gray-200', 'active-button'));
             // Agrega la clase 'active-button' y el color al botón clicado
-            button.classList.add('bg-green-600', 'active-button');
+            button.classList.add('bg-gray-200', 'active-button');
         }
     </script>
     <script src="{{ asset('js/Trainer.js') }}"></script>

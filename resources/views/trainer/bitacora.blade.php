@@ -90,8 +90,9 @@
                     </div>
                     <ul>
                         <a href="{{ route('username')}}" class="block text-center text-green-600 font-bold mt-4 bg-white border hover:text-white hover:bg-green-600 border-green-600 rounded-lg py-1">ver perfil</a>
-                        <li class="mt-2"><a href="#" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
-                        <li class="mt-2"><a href="{{ route('apprentice') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('configuracion')}}" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
+                        <li class="mt-2"><a href="{{ route('icon') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('cronograma') }}" class="block text-black hover:bg-white p-2 rounded-lg">Cronograma</a></li>
 
                     </ul>
                     <form id="logoutForm" action="{{ route('logout') }}" method="POST" class="mt-4">
@@ -116,19 +117,19 @@
         <div class="flex flex-cols-4 gap-12 pb-4  items-between text-center mt-2">
                 <div class="flex flex-col w-1/4 ">
                     <label class="font-bold">Nombre Del Aprendiz</label>
-                    <p type="text" class="bg-[#2b9b21] bg-opacity-60 p-2 rounded-full text-white font-semibold">Marian Diaz</p>
+                    <p type="text" class="bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">Marian Diaz</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
                     <label class="font-bold">N° Ficha</label>
-                    <p type="text" class=" bg-[#2b9b21] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
+                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
                     <label class="font-bold">N° Identificación</label>
-                    <p type="text" class=" bg-[#2b9b21] bg-opacity-60 p-2 rounded-full text-white font-semibold">1060435627</p>
+                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">1060435627</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
                     <label class="font-bold">Correo Electrónico</label>
-                    <p type="email" class=" bg-[#2b9b21] bg-opacity-60 p-2 rounded-full text-white font-semibold">mariandiaz@gmail.com</p>
+                    <p type="email" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">mariandiaz@gmail.com</p>
                 </div>
         </div>
     <div class="flex flex-cols-3">

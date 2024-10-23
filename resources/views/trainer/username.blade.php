@@ -26,7 +26,7 @@
                 <!-- Logo de Etapa Productiva y texto "Centro de Comercio y Servicios" en el lado derecho -->
                 <div class="text-left">
                     <!-- Logo de Etapa Seguimiento -->
-                    <a href="{{ route('apprentice') }}" class="flex items-center">
+                    <a href="{{ route('icon') }}" class="flex items-center">
                         <img src="{{ asset('img/logo.png') }}" alt="Etapa Seguimiento Logo" class="w-10 h-auto mr-1.5">
                         <div class="flex flex-col text-left">
                             <h2 class="text-[12px] m-0 text-[#009e00]">Etapa</h2>
@@ -89,8 +89,9 @@
                     </div>
                     <ul>
                         <a href="{{ route('username')}}" class="block text-center text-green-600 font-bold mt-4 bg-white border hover:text-white hover:bg-green-600 border-green-600 rounded-lg py-1">ver perfil</a>
-                        <li class="mt-2"><a href="#" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
-                        <li class="mt-2"><a href="{{ route('apprentice') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('configuracion')}}" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
+                        <li class="mt-2"><a href="{{ route('icon') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('cronograma') }}" class="block text-black hover:bg-white p-2 rounded-lg">Cronograma</a></li>
 
                     </ul>
                     <form id="logoutForm" action="{{ route('logout') }}" method="POST" class="mt-4">
@@ -106,7 +107,7 @@
         </a>
     </div>
         <div class="flex justify-center">
-    <main class=" bg-white m-2 p-2 rounded-lg  shadow-[0_0_10px_rgba(0,0,0,0.8)]  border-[#2F3E4C] w-2/3 items-center ">
+    <main class=" bg-gray-100 m-2 p-2 rounded-lg  shadow-[0_0_10px_rgba(0,0,0,0.8)]  border-[#2F3E4C] w-2/3 items-center ">
         <div class=" bg-gray-100 p-6 rounded-lg">
             <div class="text-center mb-6">
                 <!-- foto de perfil -->
@@ -120,23 +121,23 @@
                 <div class="space-y-4">
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Nombres:</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">Mariani</p>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300 ">Mariani</p>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Apellidos:</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">Dorado</p>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">Dorado</p>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700">Telefono:</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">3135457458</p>
+                        <label class="block text-sm font-medium text-gray-700">Teléfono:</label>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">3135457458</p>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Correo electrónico:</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">mariaidorado@gmail.com</p>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">mariaidorado@gmail.com</p>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Fecha de nacimiento:</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">12/diciembre/1989</p>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">12/diciembre/1989</p>
                     </div>
                 </div>
 
@@ -145,12 +146,12 @@
                 <h3 class="font-bold mb-4 mt-6">Aprendiz</h3>
                 <div class="space-y-4">
                     <a>
-                        <label class="block text-sm font-medium text-gray-700">Numero de horas seguimineto :</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">60</p>
+                        <label class="block text-sm font-medium text-gray-700">Número de horas seguimineto :</label>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">60</p>
                     </a>
                     <a>
                         <label class="block text-sm font-medium text-gray-700">Mes:</label>
-                        <select id="mes" name="mes" class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">
+                        <select id="mes" name="mes" class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">
                             <option value="enero" selected>Enero</option>
                             <option value="febrero">Febrero</option>
                             <option value="marzo">Marzo</option>
@@ -166,13 +167,13 @@
                         </select>
                     </a>
                     <a>
-                        <label class="block text-sm font-medium text-gray-700">Numero De Aprendices Asignados:</label>
-                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md">23</p>
+                        <label class="block text-sm font-medium text-gray-700">Número De Aprendices Asignados:</label>
+                        <p class="text-sm text-black bg-white mt-1 w-full h-7 p-1 rounded-md border border-gray-300">23</p>
                     </a>
                 </div>
 
                 <div class="flex justify-end mt-6 space-x-4">
-                    <button type="submit" class="bg-green-700 hover:bg-green-900 text-white py-2 px-4 rounded" id="registrar-btn" >Actualizar</button>
+                    <button class="bg-[#009e00] hover:bg-green-900 text-white py-2 px-4 rounded" id="registrar-btn" >Actualizar</button>
                     <a href="{{ route('icon') }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded">Cancelar</a>
                 </div>
         </div>
@@ -188,7 +189,7 @@
     // Agregar el evento de click
     registrarBtn.addEventListener("click", function() {
         // Mostrar un mensaje cuando el botón sea presionado
-        alert(" Visita Registrada");
+        alert("Perfil actualizado");
     });
 });
 

@@ -1,19 +1,35 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
-    <script src="{{ asset('js/Trainer.js') }}"></script>
     <title>Etapa Seguimiento</title>
     <style>
-      #userMenuTri {
+        #userMenuTri {
             top: 100%;
             margin-top: 0.5rem;
         }
+        .section-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid #009e00;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .settings-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
+
 <body class="font-['Arial',sans-serif] bg-white m-0 flex flex-col min-h-screen">
     <header class="bg-white text-[#009e00] px-5 py-2.5 flex flex-col items-center border-t-[5px] border-t-white border-b border-b-[#e0e0e0']">
         <div class="flex justify-between w-full">
@@ -74,7 +90,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-white text-center absolute left-1/2 transform -translate-x-1/2">Aprendices</div>
+        <div class="text-white text-center absolute left-1/2 transform -translate-x-1/2">Configuración</div>
         <div class="relative ml-auto flex items-center ">
 
 
@@ -84,8 +100,8 @@
                         <div>
                             <p class="text-sm font-bold">Nombre Usuario<p>
                             <p class="text-sm mt-2">Instructor</p>
-                        </div>
 
+                        </div>
                         <img src="{{ asset('img/administrador/mujer.png') }}" alt="User Icon" class="w-10 h-10 rounded-full mr-3 mx-10 bg-white border-black border-2">
                     </div>
                     <ul>
@@ -102,98 +118,43 @@
             </div>
         </div>
     </nav>
-    <div class="w-full flex justify-between items-center mt-4">
-        <a href="http://127.0.0.1:8000/trainer/perfilapre" class="ml-4">
-            <img src="http://127.0.0.1:8000/img/flecha.png" alt="Flecha" class="w-5 h-auto">
+    <div class="w-full flex justify-between items-center mt-6">
+        <a href="{{ route('icon') }}" class="ml-4">
+            <img src="{{ asset('img/flecha.png') }}" alt="Flecha" class="w-5 h-auto">
         </a>
     </div>
 
-    <main class=" bg-gray-100 m-2 px-2 rounded-lg max-height-100% w-5/7 border-2 border-black">
 
-        <div class="flex flex-cols-4 gap-12 pb-4  items-between text-center mt-2">
-                <div class="flex flex-col w-1/4 ">
-                    <label class="font-bold">Nombre Del Aprendiz</label>
-                    <p type="text" class="bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">Marian Diaz</p>
-                </div>
-                <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">N° Ficha</label>
-                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
-                </div>
-                <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">N° Identificación</label>
-                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">1060435627</p>
-                </div>
-                <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">Correo Electrónico</label>
-                    <p type="email" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">mariandiaz@gmail.com</p>
-                </div>
-        </div>
-    <div class="flex flex-cols-3">
-        <div class="flex-cols-2 gap-2 p-4 w-2/5 text-center h-vg[80] border-2 border-black rounded-2xl">
-            <div class="flex flex-col">
-                <label class="font-bold">Nombre De La Empresa</label>
-                <p type="text" class="border border-black  p-2 rounded-md bg-white">FREETIME</p>
+    <div class="flex justify-center">
+        <main class="bg-white m-4 p-6 rounded-lg shadow-lg border border-[#e0e0e0] w-2/3">
+            <h1 class="section-header">Configuración</h1>
+
+            <!-- Sección de Cambio de Contraseña -->
+            <div class="settings-card">
+                <h2 class="text-lg font-bold mb-4">Cambio de Contraseña</h2>
+                <form action="#" method="#">
+                    @csrf
+                    <div class="mb-4">
+                        <label for="currentPassword" class="block text-sm font-medium text-gray-700">Contraseña Actual</label>
+                        <input type="password" id="currentPassword" name="currentPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-green-500 sm:text-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="newPassword" class="block text-sm font-medium text-gray-700">Nueva Contraseña</label>
+                        <input type="password" id="newPassword" name="newPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-green-500 sm:text-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirmar Nueva Contraseña</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-green-500 sm:text-sm" required>
+                    </div>
+                    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Actualizar Contraseña</button>
+                </form>
             </div>
-            <div class="w-full flex space-x-4 items-center justify-between text-center">
-                <div class="flex flex-col">
-                    <label class="font-bold">N° Visita</label>
-                    <select class="border border-gray-400 p-2 rounded-md w-48 bg-white text-center">
-                        <option selected="">Selecciona Opción</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-                <div class="flex flex-col">
-                    <label class="font-bold">Fecha</label>
-                    <input type="date" class="border border-gray-400 p-2 rounded-md w-48 bg-white">
-                </div>
-            </div>
-            <div class="flex flex-col ">
-                <label class="font-bold">Nombre del Jefe Inmediato</label>
-                <p class="border border-gray-400 p-2 rounded-md bg-white ">Juan Velazco Suarez</p>
-            </div>
-            <div class="flex flex-col ">
-                <label class="font-bold">Correo</label>
-                <p class="border border-gray-400 p-2 rounded-md  bg-white">user@example.com</p>
-            </div>
-            <div class="flex flex-col ">
-                <label class="font-bold">Telefono de contacto</label>
-                <p class="border border-gray-400 p-2 rounded-md bg-white">1234567890</p>
-            </div>
-        </div>
-        {{-- Contenedor Fantasma --}}
-        <div class=" w-1/5  ">
-        </div>
-        <div class=" w-2/5 border-2 rounded-2xl border-black h-80 mt-8">
-            <div class="flex flex-col p-6 text-center">
-                <label class="font-semibold ">Tipo de Modalidad de Etapa Productiva</label>
-                <p type="text" class="border border-black  p-2 rounded-md bg-white">Pasantia</p>
-            </div>
-            <div class="flex flex-col p-6 text-center">
-                <label class="font-semibold ">Observación/Inasistencia y/o Dificultades</label>
-                <textarea id="observacion" class="border border-black p-2 rounded-md h-28 bg-white"></textarea>
-            </div>
-        </div>
+
+
+        </main>
     </div>
-    <div class=" pt-2 px-[44%]">
-        <button class="bg-[#009E00] h-8 w-44 rounded-2xl text-white mb-6"  id="registrar-btn">REGISTRAR</button>
-      </div>
-    </main>
-    <script>
-         // Esperar a que el DOM se cargue
-    document.addEventListener("DOMContentLoaded", function() {
-    // Obtener el botón por su ID
-    const registrarBtn = document.getElementById("registrar-btn");
 
-    // Agregar el evento de click
-    registrarBtn.addEventListener("click", function() {
-        // Mostrar un mensaje cuando el botón sea presionado
-        alert(" Visita Registrada");
-    });
-});
-    </script>
-
+    <script src="{{ asset('js/Trainer.js') }}"></script>
 </body>
+
 </html>

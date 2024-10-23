@@ -92,8 +92,9 @@
                     </div>
                     <ul>
                         <a href="{{ route('username')}}" class="block text-center text-green-600 font-bold mt-4 bg-white border hover:text-white hover:bg-green-600 border-green-600 rounded-lg py-1">ver perfil</a>
-                        <li class="mt-2"><a href="#" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
-                        <li class="mt-2"><a href="{{ route('apprentice') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('configuracion')}}" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
+                        <li class="mt-2"><a href="{{ route('icon') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('cronograma') }}" class="block text-black hover:bg-white p-2 rounded-lg">Cronograma</a></li>
 
                     </ul>
                     <form id="logoutForm" action="{{ route('logout') }}" method="POST" class="mt-4">
@@ -123,7 +124,7 @@
                 <input type="text" placeholder="Título" class="border p-2 rounded w-full mb-2">
                 <textarea placeholder="Asunto" class="border p-2 rounded w-full mb-2"></textarea>
                 <a href="{{ route('notification') }}" type="submit" class="bg-[#009e00] ] text-white p-2 rounded">Enviar Reporte</a>
-                <a href="{{ route('notification') }}" type="submit" class="bg-red-600 hover:bg-red-800 text-white p-2 rounded">Cancelar</a>
+                <a href="{{ route('notification') }}" type="submit" class="bg-gray-300 hover:bg-gray-400 text-black p-2 rounded">Cancelar</a>
             </form>
                 </div>
                     </div>

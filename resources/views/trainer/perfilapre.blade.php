@@ -90,8 +90,9 @@
                     </div>
                     <ul>
                         <a href="{{ route('username')}}" class="block text-center text-green-600 font-bold mt-4 bg-white border hover:text-white hover:bg-green-600 border-green-600 rounded-lg py-1">ver perfil</a>
-                        <li class="mt-2"><a href="#" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
-                        <li class="mt-2"><a href="{{ route('apprentice') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('configuracion')}}" class="block text-black hover:bg-white p-2 rounded-lg">Configuración</a></li>
+                        <li class="mt-2"><a href="{{ route('icon') }}" class="block text-black hover:bg-white p-2 rounded-lg">Aprendices</a></li>
+                        <li class="mt-2"><a href="{{ route('cronograma') }}" class="block text-black hover:bg-white p-2 rounded-lg">Cronograma</a></li>
 
                     </ul>
                     <form id="logoutForm" action="{{ route('logout') }}" method="POST" class="mt-4">
@@ -122,57 +123,57 @@
                     </div>
                     <div class="w-full">
                         <label for="nombre" class="block text-sm font-medium text-gray-700">Nombres</label>
-                        <input type="text" id="nombre" value="MARIAN" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="nombre" value="Carolina" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 ">
                     </div>
                     <div class="w-full">
                         <label for="apellido" class="block text-sm font-medium text-gray-700">Apellidos</label>
-                        <input type="text" id="apellido" value="DIAZ" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="apellido" value="Diaz" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="identificacion" class="block text-sm font-medium text-gray-700">N° identificación</label>
-                        <input type="text" id="identificacion" value="1060435627" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="identificacion" value="1060435758" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="ficha" class="block text-sm font-medium text-gray-700">N° ficha</label>
-                        <input type="text" id="ficha" value="2654013" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="ficha" value="2354781" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                        <input type="email" id="email" value="mariandiaz@gmail.com" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="email" id="email" value="carolinadiaz@gmail.com" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="departamento" class="block text-sm font-medium text-gray-700">Departamento</label>
-                        <input type="text" id="departamento" value="CAUCA" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="departamento" value="Cauca" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="municipio" class="block text-sm font-medium text-gray-700">Municipio</label>
-                        <input type="text" id="municipio" value="POPAYAN" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="municipio" value="Popayán" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="genero" class="block text-sm font-medium text-gray-700">Género</label>
-                        <input type="text" id="genero" value="FEMENINO" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="genero" value="Femenino" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="nivel_formacion" class="block text-sm font-medium text-gray-700">Nivel de Formación</label>
-                        <input type="text" id="nivel_formacion" value="TECNOLOGO" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="nivel_formacion" value="Tecnologo" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                     <div class="w-full">
                         <label for="programa" class="block text-sm font-medium text-gray-700">Nombre del Programa</label>
-                        <input type="text" id="programa" value="ADSO" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
+                        <input type="text" id="programa" value="Adso" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0">
                     </div>
                 </div>
                 <div class="md:col-span-2 flex flex-col items-center space-y-4">
                     <div class="flex justify-between items-center w-full">
                         <div>
                             <a href="{{ route('bitacora') }}" class="m-2.5 py-10 rounded-[10%] flex flex-col items-center text-center p-5 w-56 h-56 hover:border-green-600">
-                                <img src="{{ asset('img/trainer/bitacoras.jpg') }}" alt="Bitacora" class="m-2.5 py-5 rounded-[10%] flex flex-col items-center text-center p-2 bg-white border-[2px] border-black w-44 h-40 hover:border-green-600 object-cover">
+                                <img src="{{ asset('img/trainer/bitacoras_1.png') }}" alt="Bitacora" class="m-2.5 py-5 rounded-[10%] flex flex-col items-center text-center p-2 bg-white border-[2px] border-black w-40 h-40 hover:border-green-600 object-cover">
                                 <h2 class="text-center font-weight:300">Bitacora</h2>
                             </a>
 
                         </div>
                         <div>
                         <a href="{{ route('visita') }}" class="m-2.5 py-10 rounded-[10%] flex flex-col items-center text-center p-5 w-56 h-56 hover:border-green-600">
-                            <img src="{{ asset('img/trainer/visita.jpg') }}" alt="Visita" class="m-2.5 py-5 rounded-[10%] flex flex-col items-center text-center p-2 bg-white border-[2px] border-black w-44 h-40 hover:border-green-600 object-cover">
+                            <img src="{{ asset('img/trainer/visitas_1.png') }}" alt="Visita" class="m-2.5 py-5 rounded-[10%] flex flex-col items-center text-center p-2 bg-white border-[2px] border-black w-40 h-40 hover:border-green-600 object-cover">
                             <h2 class="text-center font-weight:300">Visita</h2>
                         </a>
 
