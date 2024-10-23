@@ -74,7 +74,7 @@
                 </ul>
             </div>
         </div>
-        <div class="text-white text-center absolute left-1/2 transform -translate-x-1/2">Aprendices</div>
+        <div class="text-white text-center absolute left-1/2 transform -translate-x-1/2">Concenrtación</div>
         <div class="relative ml-auto flex items-center ">
 
 
@@ -116,12 +116,12 @@
                     <p type="text" class="bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">Marian Diaz</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">N° Ficha</label>
-                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
+                    <label class="font-bold">Programa</label>
+                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">ADSO</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">N° Identificación</label>
-                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">1060435627</p>
+                    <label class="font-bold">N° Ficha</label>
+                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
                     <label class="font-bold">Correo Electrónico</label>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="flex flex-col">
                     <label class="font-bold">Fecha</label>
-                    <input type="date" class="border border-gray-400 p-2 rounded-md w-48 bg-white">
+                    <input type="date" class="border border-gray-400 p-2 rounded-md w-48 bg-white text-center">
                 </div>
             </div>
             <div class="flex flex-col ">

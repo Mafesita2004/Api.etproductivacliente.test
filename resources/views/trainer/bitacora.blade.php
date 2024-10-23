@@ -120,12 +120,12 @@
                     <p type="text" class="bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">Marian Diaz</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">N° Ficha</label>
-                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
+                    <label class="font-bold">Programa</label>
+                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">ADSO</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
-                    <label class="font-bold">N° Identificación</label>
-                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">1060435627</p>
+                    <label class="font-bold">N° Ficha</label>
+                    <p type="text" class=" bg-[#009E00] bg-opacity-60 p-2 rounded-full text-white font-semibold">2654013</p>
                 </div>
                 <div class="flex flex-col  w-1/4">
                     <label class="font-bold">Correo Electrónico</label>
@@ -201,11 +201,11 @@
             </div>
             <div class="flex flex-col p-6 text-center">
                 <label class="font-semibold ">Bitacoras</label>
-                <input type="file" class="border border-black p-2 rounded-md bg-white" name="fileUpload" id="fileUpload">
+                <input type="file" class="border border-black p-2 rounded-md bg-white text-center" name="fileUpload" id="fileUpload">
             </div>
             <div class="flex flex-col p-6 text-center">
                 <label class="font-bold">Fecha</label>
-                <input type="date" class="border border-black -400 p-2 rounded-md w-48 bg-white ml-36">
+                <input type="date" class="border border-black -400 p-2 rounded-md w-48 bg-white ml-36 text-center">
             </div>
             <div class="flex flex-col p-6 text-center">
                 <label class="font-semibold ">Observación/Inasistencia y/o Dificultades</label>
